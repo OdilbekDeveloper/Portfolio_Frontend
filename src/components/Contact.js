@@ -31,7 +31,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("https://desmon-portfolio.up.railway.app//api/contact/", {
+    let response = await fetch("https://desmon-portfolio.up.railway.app/api/contact/", {
       method: "POST",
       body: dataform,
     });
